@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542874306109.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7380F031",
+    "lastKnownWriteTime" : 1542874545,
+    "last_content_update" : 1542874545340,
+    "path" : "E:/teaching/RL_R_Tromso_2018/RL_tutorial/_scripts/MF_analysis.R",
+    "project_path" : "_scripts/MF_analysis.R",
+    "properties" : {
+        "cursorPosition" : "13,37",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
