@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542849821739.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5A38F6A8",
+    "lastKnownWriteTime" : 1542849824,
+    "last_content_update" : 1542849824717,
+    "path" : "E:/teaching/RL_R_Tromso_2018/RL_tutorial/_scripts/txt2df.R",
+    "project_path" : "_scripts/txt2df.R",
+    "properties" : {
+        "cursorPosition" : "10,1",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
