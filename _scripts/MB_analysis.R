@@ -30,6 +30,12 @@ df = data.frame(Trial = 1:80,
                 reversal = reversal)
 
 
+### makeing the plot
+myconfig <- theme_bw(base_size = 20) +
+    theme(panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          panel.background = element_blank() )
+
 ## time course of the choice
 g1 = ggplot(df, aes(Trial,Data))
 g1 = g1 + geom_line(size = 1.5, aes(color= 'Data')) + geom_point(size = 2, shape = 21, fill='skyblue3',color= 'skyblue3')
