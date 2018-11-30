@@ -61,6 +61,7 @@ f_fict = prl_fictitious(data = '_data/rawdata.txt', niter = 2000, nwarmup = 1000
 library(hBayesDM); library(rstan)
 # load data
 load('_data/dataList.RData')
+load('_data/rawdata.RData')
 
 # load model object
 f = readRDS('_outputs/RL_stanfit.RData')
