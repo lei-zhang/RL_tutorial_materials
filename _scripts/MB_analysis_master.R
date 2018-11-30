@@ -9,13 +9,14 @@
 # clear workspace
 library(rstan)
 library(ggplot2)
-library(R.matlab)
 library(hBayesDM)
 
 load('_data/dataList.RData')
 
-f = bandit2arm_delta(data = '_data/rawdata.txt', niter = 2000, nwarmup = 1000, 
+f_RL = bandit2arm_delta(data = '_data/rawdata.txt', niter = 2000, nwarmup = 1000, 
                      inc_postpred = T, ncore = 4, adapt_delta = .9)
+f_fict = prl_fictitious(data = '_data/rawdata.txt', niter = 2000, nwarmup = 1000, 
+                        inc_postpred = T, ncore = 1, adapt_delta = .8)
 
 
 # =============================================================================
@@ -74,6 +75,7 @@ y_pred = extract(f$fit, pars='y_pred')$y_pred
 dim(y_pred)  # [4000,10,80]
 y_pred_mean_mcmc = apply(y_pred==1, c(1,3), mean)
 dim(y_pred_mean_mcmc)  # [4000, 80]
+y_pred_mean = colMeans(y_pred_mean_mcmc)
 y_pred_mean_HDI = apply(y_pred_mean_mcmc, 2, HDIofMCMC)
 
 # plot
